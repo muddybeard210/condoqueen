@@ -1,0 +1,78 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex.row {
+    flex-direction: row;
+}
+
+.flex.column {
+    flex-direction: column;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.navContainer {
+    min-height: 85px;
+    width: 100%;
+    background-color: #002367;
+    position: fixed;
+    box-shadow: 0px 0px 6px 3px black;
+    z-index: 100;
+    top: 0;
+}
+
+.nav {
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    color: white;
+}
+
+.mainContent {
+    margin-top: 80px;
+}
+
+.backdropHolder {
+    background-image: url("./resources/seattleBackdrop.2.jpg");
+    height: 700px;
+    background-size: cover;
+    background-position-y: center;
+}
+
+.backdropHolder div div {
+    width: 50%;
+    height: 100%;
+}
+
+.backdropHolder div {
+    height: 100%;
+}
+
+.aboutMe p {
+    color: white;
+}
+
+.portaitHolder {
+    height: 100%;
+}
+
+.aboutMeContent {
+    max-width: 400px;
+    width: 100% !important;
+}
+.reviews {
+    min-height: 500px;
+    background-color: #f3f3f3;
+}
+.navContainer.flex.row {
+    margin: 0px;
+}

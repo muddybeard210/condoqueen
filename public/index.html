@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to Firebase Hosting</title>
+
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/4.9.0/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/4.9.0/firebase-auth.js"></script>
+  <script defer src="/__/firebase/4.9.0/firebase-database.js"></script>
+  <script defer src="/__/firebase/4.9.0/firebase-messaging.js"></script>
+  <script defer src="/__/firebase/4.9.0/firebase-storage.js"></script>
+  <!-- initialize the SDK after all desired features are loaded -->
+  <script defer src="/__/firebase/init.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="owl.carousel.min.css">
+  <link rel="stylesheet" href="owl.theme.default.min.css">
+
+</head>
+
+<body>
+  <div class="navContainer flex row">
+    <div class="nav flex row">
+      <h1>Contact me today!</h1>
+      <div></div>
+      <h2>1-206-555-4321</h2>
+    </div>
+  </div>
+  <div class="mainContent">
+    <div class="backdropHolder">
+      <div class="flex row">
+        <div></div>
+        <div class="portaitHolder flex center">
+          <img src="./resources/camille_portait.jpg" alt="">
+        </div>
+        <div class="aboutMe flex column center">
+          <div class="aboutMeContent flex column center">
+            <p>Pastry pastry ice cream macaroon tart jelly-o. Fruitcake cookie brownie chocolate. Bear claw dragée dessert powder.
+              Caramels icing sesame snaps sesame snaps cupcake cotton candy halvah marshmallow.
+            </p>
+            <p>Soufflé jelly-o jelly beans. Carrot cake tootsie roll dragée liquorice. Macaroon cake lollipop tart sesame snaps
+              icing sweet caramels brownie. Cookie gummi bears dessert pie. Powder muffin macaroon. Gummies gummies dessert
+              fruitcake liquorice soufflé toffee gummi bears soufflé. Candy danish icing gingerbread cookie.
+            </p>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+  <div class="owl-carousel">
+    <div> Your Content </div>
+    <div> Your Content </div>
+    <div> Your Content </div>
+    <div> Your Content </div>
+    <div> Your Content </div>
+    <div> Your Content </div>
+    <div> Your Content </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4="
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="scripts/owl.carousel.min.js"></script>
+  <script src="./main.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel();
+    });
+  </script>
+</body>
+
+</html>
