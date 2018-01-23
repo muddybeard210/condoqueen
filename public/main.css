@@ -76,3 +76,13 @@ body {
 .navContainer.flex.row {
     margin: 0px;
 }
+.item {
+    background-color: blue;
+    height: 300px;
+    width: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}

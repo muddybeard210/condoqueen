@@ -18,8 +18,8 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="owl.carousel.min.css">
-  <link rel="stylesheet" href="owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
 
 </head>
 
@@ -53,24 +53,46 @@
       </div>
     </div>
   </div>
-  <div class="owl-carousel">
-    <div> Your Content </div>
-    <div> Your Content </div>
-    <div> Your Content </div>
-    <div> Your Content </div>
-    <div> Your Content </div>
-    <div> Your Content </div>
-    <div> Your Content </div>
-  </div>
+  <div class="owl-carousel owl-theme">
+    <div class="item">
+        <div>Person</div>
+        <div>Text</div>
+    </div>
+    <div class="item">
+        <div>Person</div>
+        <div>Text</div>
+    </div>
+    <div class="item">
+        <div>Person</div>
+        <div>Text</div>
+    </div>
+    <div class="item">
+        <div>Person</div>
+        <div>Text</div>
+    </div>
+    <div class="item">
+        <div>Person</div>
+        <div>Text</div>
+    </div>
+</div>
   <script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4="
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="scripts/owl.carousel.min.js"></script>
   <script src="./main.js"></script>
   <script>
-    $(document).ready(function () {
-      $(".owl-carousel").owlCarousel();
-    });
+        $(document).ready(function () {
+          var owl = $('.owl-carousel');
+          owl.owlCarousel({
+              items: 1,
+              loop: true,
+              margin: 10,
+              autoplay: true,
+              autoplayTimeout: 5000,
+              autoplayHoverPause: true
+          });
+
+      });
   </script>
 </body>
 
