@@ -16,10 +16,11 @@
   <!-- initialize the SDK after all desired features are loaded -->
   <script defer src="/__/firebase/init.js"></script>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
 </head>
 
@@ -35,10 +36,10 @@
     <div class="backdropHolder">
       <div class="flex row">
         <div></div>
-        <div class="portaitHolder flex center">
+        <div class="portaitHolder flex center animated fadeInLeft">
           <img src="./resources/camille_portait.jpg" alt="">
         </div>
-        <div class="aboutMe flex column center">
+        <div class="aboutMe flex column center animated fadeInRight">
           <div class="aboutMeContent flex column center">
             <p>Pastry pastry ice cream macaroon tart jelly-o. Fruitcake cookie brownie chocolate. Bear claw dragée dessert powder.
               Caramels icing sesame snaps sesame snaps cupcake cotton candy halvah marshmallow.
@@ -86,10 +87,11 @@
           owl.owlCarousel({
               items: 1,
               loop: true,
-              margin: 10,
+              margin: 0,
               autoplay: true,
               autoplayTimeout: 5000,
-              autoplayHoverPause: true
+              autoplayHoverPause: true,
+
           });
 
       });
