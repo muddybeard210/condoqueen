@@ -15,12 +15,24 @@ body {
 .flex.column {
     flex-direction: column;
 }
-
+.space-between {
+    justify-content: space-between;
+}
+.space-around {
+    justify-content: space-around;
+}
 .center {
     justify-content: center;
     align-items: center;
 }
-
+.iconsSection {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.iconsSection img {
+    height: 125px;
+    width: 125px;
+}
 .navContainer {
     min-height: 85px;
     width: 100%;
