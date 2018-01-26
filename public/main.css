@@ -28,6 +28,8 @@ body {
 .iconsSection {
     margin-top: 40px;
     margin-bottom: 40px;
+    min-height: 400px;
+    align-items: center;
 }
 .iconsSection img {
     height: 125px;
