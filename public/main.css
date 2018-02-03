@@ -123,6 +123,11 @@ body {
 .owl-carousel {
     padding: 20px 0px;
 }
+.underConstruction {
+    height: 90vh;
+    color: lightgrey;
+    text-align: center;
+}
 
 @media screen and (max-width: 500px) {
     .flex.row {
