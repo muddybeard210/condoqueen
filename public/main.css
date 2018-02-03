@@ -35,6 +35,12 @@ body {
     height: 125px;
     width: 125px;
 }
+.iconHolder {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
 .navContainer {
     min-height: 85px;
     width: 100%;
@@ -116,4 +122,22 @@ body {
 
 .owl-carousel {
     padding: 20px 0px;
+}
+
+@media screen and (max-width: 500px) {
+    .flex.row {
+        flex-direction: column;
+    }
+    .item {
+        flex-direction: column;
+        width: unset;
+    }
+    .iconHolder {
+        padding: 40px 0px;
+    }
+    .backdropHolder {
+        height: 100%;
+        padding: 80px 20px;
+    }
+
 }

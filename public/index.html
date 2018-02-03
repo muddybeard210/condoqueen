@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html 💻="Hey there! Feel free to look around.  Have any questions?  email matthewsheridansmith@gmail.com">
 
 <head>
   <meta charset="utf-8">
@@ -36,10 +36,10 @@
     <div class="backdropHolder">
       <div class="flex row">
         <div></div>
-        <div class="portaitHolder flex center animated fadeInLeft">
+        <div class="portaitHolder flex center animated fadeInLeft" hidden>
           <img src="./resources/camille_portait.jpg" alt="">
         </div>
-        <div class="aboutMe flex column center animated fadeInRight">
+        <div class="aboutMe flex column center animated fadeInRight" hidden>
           <div class="aboutMeContent flex column center">
             <p>Pastry pastry ice cream macaroon tart jelly-o. Fruitcake cookie brownie chocolate. Bear claw dragée dessert powder.
               Caramels icing sesame snaps sesame snaps cupcake cotton candy halvah marshmallow.
@@ -61,11 +61,13 @@
     </div>
     <div class="iconHolder">
       <img src="resources/home3.svg" alt="">
-      
+      <p class="iconStatement">Single Family Homes</p>
+
     </div>
     <div class="iconHolder">
         <img src="resources/price-tag.svg" alt="">
-      
+        <p class="iconStatement">Getting you the best deal</p>
+
     </div>
   </div>
   <div class="owl-carousel owl-theme">
@@ -104,7 +106,7 @@
               margin: 0,
               autoplay: true,
               autoplayTimeout: 5000,
-              autoplayHoverPause: true,
+              autoplayHoverPause: false,
 
           });
 
