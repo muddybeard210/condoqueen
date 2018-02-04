@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
 body {
     padding: 0px;
     margin: 0px;
     font-family: helvetica;
+}
+a {
+    text-decoration: underline;
+    color: white;
+    
 }
 
 .flex {
@@ -64,11 +71,19 @@ body {
 
 .backdropHolder {
     background-image: url("./resources/seattleBackdrop.2.jpg");
-    height: 90vh;
+    height: 80vh;
     background-size: cover;
     background-position-y: center;
+    position: relative;
 }
-
+.overlay {
+    position: absolute;
+    background-color: #0000007a;
+    box-shadow: 0px 0px 8px 5px #0000007a;
+    height: 80% !important;
+    width: 100%;
+    top: 10%;
+}
 .backdropHolder div div {
     width: 100%;
     height: 100%;
@@ -81,7 +96,7 @@ body {
 .aboutMe p {
     color: white;
 }
-.fadeInRight, .fadeInLeft {
+.animated {
     animation-duration: 2s !important;
 }
 
@@ -95,13 +110,19 @@ body {
 }
 
 .aboutMeContent p {
-    width: 100%;
+    /* width: 100%; */
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    font-size: 18px;
 }
 
 .reviews {
     min-height: 500px;
     background-color: #f3f3f3;
 }
+.contactInfo {
+    text-align: right;
+
+    }
 
 .navContainer.flex.row {
     margin: 0px;
@@ -109,19 +130,32 @@ body {
 
 .item {
     background-color: #f3f3f3;
+    box-shadow: 0px 0px 8px 2px #eaeaea;
     height: 300px;
-    width: 500px;
+    width: 100%;
+    max-width: 800px;
     margin: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    box-shadow: 0px 0px 8px 0px grey;
+    /* box-shadow: 0px 0px 8px 0px grey; */
     margin-top: 10px;
     margin-bottom: 10px;
+}
+.item div:nth-child(1) {
+    text-align: center;
+}
+
+.item div {
+    width: 50%;
+    padding: 10px;
+
 }
 
 .owl-carousel {
     padding: 20px 0px;
+    font-family: 'Raleway', sans-serif;
+
 }
 
 @media screen and (max-width: 500px) {
@@ -137,7 +171,32 @@ body {
     }
     .backdropHolder {
         height: 100%;
-        padding: 80px 20px;
+        padding: 80px 0px;
+    }
+    .item div {
+        text-align: center;
+        width: 80%;
+    }
+    .overlay {
+        position: absolute;
+        background-color: #0000007a;
+        box-shadow: none;
+        height: 100% !important;
+        width: 100%;
+        top: 0;
+    }
+    .aboutMeContent p {
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    padding: 0px 22px;
+    font-size: 1.25em;
+    text-align: justify;
+    }
+    .contactInfo{
+    text-align: center;
+        font-size: 1.25em;
+    }
+    body > div.navContainer.flex.row > div > h1 {
+        margin-bottom: 0px;
     }
 
 }
