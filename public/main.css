@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+
+
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: lato;
+    font-weight: 300;
+}
+a {
+    text-decoration: underline;
+    color: white;
+    
+}
+
+.flex {
+    display: flex;
+}
+
+.flex.row {
+    flex-direction: row;
+}
+
+.flex.column {
+    flex-direction: column;
+}
+.space-between {
+    justify-content: space-between;
+}
+.space-around {
+    justify-content: space-around;
+}
+.center {
+    justify-content: center;
+    align-items: center;
+}
+.iconsSection {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    min-height: 400px;
+    align-items: center;
+}
+.iconStatement {
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+}
+.iconsSection img {
+    height: 150px;
+}
+.iconHolder {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.navContainer {
+    min-height: 85px;
+    width: 100%;
+    background-color: #002367;
+    position: fixed;
+    box-shadow: 0px 0px 6px 3px black;
+    z-index: 100;
+    top: 0;
+}
+
+.nav {
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    color: white;
+}
+
+.mainContent {
+    margin-top: 80px;
+}
+
+.backdropHolder {
+    background-image: url("./resources/seattleBackdrop.2.jpg");
+    height: 90vh;
+    background-size: cover;
+    background-position-y: center;
+    position: relative;
+    min-height: 600px;
+}
+.overlay {
+    position: absolute;
+    background-color: #0000007a;
+    box-shadow: 0px 0px 8px 5px #0000007a;
+    height: 80% !important;
+    width: 100%;
+    top: 10%;
+}
+.backdropHolder div div {
+    width: 100%;
+    height: 100%;
+}
+
+.backdropHolder div {
+    height: 100%;
+}
+
+.aboutMe p {
+    color: white;
+}
+.animated {
+    animation-duration: 2s !important;
+}
+
+.portaitHolder {
+    height: 100%;
+}
+
+.aboutMeContent {
+    width: 100% !important;
+}
+.aboutMeContent h1 {
+    color: white;
+    border-bottom: 1px solid white;
+padding-bottom: 10px;
+font-size: 51px;
+} 
+
+.aboutMeContent p {
+    /* width: 100%; */
+    font-size: 20px;
+}
+
+.reviews {
+    min-height: 500px;
+    background-color: #f3f3f3;
+}
+.contactInfo {
+    text-align: right;
+
+    }
+
+.navContainer.flex.row {
+    margin: 0px;
+}
+
+.item {
+    background-color: #f3f3f3;
+    box-shadow: 0px 0px 8px 2px #eaeaea;
+    height: 300px;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* box-shadow: 0px 0px 8px 0px grey; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.item div:nth-child(1) {
+    text-align: center;
+}
+
+.item div {
+    width: 50%;
+    padding: 10px;
+
+}
+.inquire {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+.inquireLabel {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+.inquireHolder {
+    background-color: #002367;
+    color: white;
+}
+.width-full {
+    width: 100%;
+}
+.inquireInput {
+    height: 40px;
+    font-size:24px;
+    width: 100%;
+}
+.owl-carousel {
+    padding: 20px 0px;
+    font-family: 'Raleway', sans-serif;
+
+}
+.padding {
+    width: 50% !important;
+}
+
+@media screen and (max-width: 500px) {
+    .flex.row {
+        flex-direction: column;
+    }
+    .item {
+        flex-direction: column;
+        width: unset;
+    }
+    .iconHolder {
+        padding: 40px 0px;
+    }
+    .backdropHolder {
+        height: 100%;
+        padding: 80px 0px;
+    }
+    .item div {
+        text-align: center;
+        width: 80%;
+    }
+    .overlay {
+        position: absolute;
+        background-color: #0000007a;
+        box-shadow: none;
+        height: 100% !important;
+        width: 100%;
+        top: 0;
+    }
+    .aboutMeContent p {
+    padding: 0px 22px;
+    font-size: 1.25em;
+    text-align: justify;
+    }
+    .contactInfo{
+    text-align: center;
+        font-size: 1.25em;
+    }
+    body > div.navContainer.flex.row > div > h1 {
+        margin-bottom: 0px;
+    }
+    .aboutMeContent h1 {
+        font-size: 34px;
+        text-align: center;
+    }
+    .inquire {
+        width: 100%;
+        margin: auto;
+        padding: 0px;
+    }
+
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html 💻="Hey there! Feel free to look around.  Have any questions?  email matthewsheridansmith@gmail.com">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Condo Queen</title>
+
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/4.9.0/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/4.9.0/firebase-auth.js"></script>
+  <script defer src="/__/firebase/4.9.0/firebase-database.js"></script>
+  <script defer src="/__/firebase/4.9.0/firebase-messaging.js"></script>
+  <script defer src="/__/firebase/4.9.0/firebase-storage.js"></script>
+  <!-- initialize the SDK after all desired features are loaded -->
+  <script defer src="/__/firebase/init.js"></script>
+
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+</head>
+
+<body>
+  <div class="navContainer flex row">
+    <div class="nav flex row">
+      <h1>Contact me today!</h1>
+      <div></div>
+      <h2 class="contactInfo">
+        1-206-555-4321
+
+      </h2>
+    </div>
+  </div>
+  <div class="mainContent">
+    <div class="backdropHolder">
+      <div class="overlay"></div>
+      <div class="flex row">
+        <div class="padding"></div>
+        <div class="portaitHolder flex center animated fadeIn">
+          <img src="./resources/camille_portait.jpg" alt="">
+        </div>
+        <div class="aboutMe flex column center animated fadeIn">
+          <div class="aboutMeContent flex column center">
+            <h1>The Queen of Seattle Living</h1>
+            <p>Soufflé jelly-o jelly beans. Carrot cake tootsie roll dragée liquorice. Macaroon cake lollipop tart sesame snaps
+              icing sweet caramels brownie. Cookie gummi bears dessert pie. Powder muffin macaroon. Gummies gummies dessert
+              fruitcake liquorice soufflé toffee gummi bears soufflé. Candy danish icing gingerbread cookie.
+            </p>
+          </div>
+        </div>
+        <div class="padding"></div>
+      </div>
+    </div>
+  </div>
+  <div class="iconsSection flex row space-around">
+    <div class="iconHolder">
+      <img src="resources/office.svg" alt="">
+      <p class="iconStatement">Specializing in condominiums</p>
+    </div>
+    <div class="iconHolder">
+      <img src="resources/home3.svg" alt="">
+      <p class="iconStatement">Single Family Homes</p>
+
+    </div>
+    <div class="iconHolder">
+        <img src="resources/price-tag.svg" alt="">
+        <p class="iconStatement">Getting you the best deal</p>
+
+    </div>
+  </div>
+  <div class="owl-carousel owl-theme">
+    <div class="item">
+        <div>Celeste Murphy</div>
+        <div>It is my absolute pleasure to recommend Camille. She's smart, strategic, professional and a lot of fun to work with. She is wonderful with her customers, does a great job and always exceeded my expectations.</div>
+    </div>
+    <div class="item">
+        <div>Lisa Hunter</div>
+        <div>I would recommend Camille for any real estate needs. Call her up if you need real estate advice!</div>
+    </div>
+    <div class="item">
+        <div>Cameron Okell</div>
+        <div>Fast with any information I need and extremely dependable.</div>
+    </div>
+  </div>
+  <div class="inquireHolder">
+    <div class="inquire">
+      <h1>Get In Touch</h1>
+      <div class="flex row">
+        <div class="flex column width-full">
+          <p class="inquireLabel">First Name</p>
+          <input class="inquireInput" type="text" name="firstName" >
+  
+        </div>
+        <div class="flex column width-full">
+          <p class="inquireLabel" >Last Name</p>
+          <input class="inquireInput" type="text" name="lastName" >
+  
+        </div>
+  
+      </div>
+      <div class="flex column">
+        <p class="inquireLabel" >Email</p>
+        <input class="inquireInput" type="text" name="emailAddress" >
+  
+      </div>
+      <div>
+        <p ></p>
+        <select class="inquireInput" name="type" id="">
+          <option value="1">Buying</option>
+          <option value="2">Selling</option>
+          <option value="3">Other</option>
+        </select>
+        <p class="inquireLabel" >Any Additional Information</p>
+        <!-- <input class="inquireInput" type="text" name="additionalInfo" > -->
+        <textarea class="inquireInput" name="Text1" cols="40" rows="5"></textarea>
+      </div>
+      <div>
+          <input type="submit" onclick="axiosTest()" name="submit">
+  
+      </div>
+  
+    </div>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4="
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="scripts/owl.carousel.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
