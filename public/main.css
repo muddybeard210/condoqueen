@@ -1,18 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400');
-
-
-
 body {
     padding: 0px;
     margin: 0px;
     font-family: lato;
     font-weight: 300;
 }
+
 a {
     text-decoration: underline;
     color: white;
-    
 }
 
 .flex {
@@ -26,40 +23,48 @@ a {
 .flex.column {
     flex-direction: column;
 }
+
 .space-between {
     justify-content: space-between;
 }
+
 .space-around {
     justify-content: space-around;
 }
+
 .center {
     justify-content: center;
     align-items: center;
 }
+
 .iconsSection {
     margin-top: 40px;
     margin-bottom: 40px;
     min-height: 400px;
     align-items: center;
 }
+
 .iconStatement {
     font-size: 36px;
     font-weight: 400;
     text-align: center;
 }
+
 .iconsSection img {
     height: 150px;
 }
+
 .iconHolder {
     display: flex;
     width: 100%;
     flex-direction: column;
     align-items: center;
 }
+
 .navContainer {
     min-height: 85px;
     width: 100%;
-    background-color: #002367;
+    background-color: #0e0e0e;
     position: fixed;
     box-shadow: 0px 0px 6px 3px black;
     z-index: 100;
@@ -74,25 +79,26 @@ a {
 }
 
 .mainContent {
-    margin-top: 80px;
+    /* margin-top: 80px; */
 }
 
 .backdropHolder {
     background-image: url("./resources/seattleBackdrop.2.jpg");
-    height: 90vh;
+    height: 99vh;
     background-size: cover;
     background-position-y: center;
     position: relative;
     min-height: 600px;
 }
+
 .overlay {
     position: absolute;
     background-color: #0000007a;
     box-shadow: 0px 0px 8px 5px #0000007a;
-    height: 80% !important;
+    height: 100% !important;
     width: 100%;
-    top: 10%;
 }
+
 .backdropHolder div div {
     width: 100%;
     height: 100%;
@@ -105,6 +111,7 @@ a {
 .aboutMe p {
     color: white;
 }
+
 .animated {
     animation-duration: 2s !important;
 }
@@ -116,26 +123,29 @@ a {
 .aboutMeContent {
     width: 100% !important;
 }
+
 .aboutMeContent h1 {
     color: white;
     border-bottom: 1px solid white;
-padding-bottom: 10px;
-font-size: 51px;
-} 
+    padding-bottom: 10px;
+    font-size: 51px;
+    font-weight: 400;
+}
 
 .aboutMeContent p {
     /* width: 100%; */
     font-size: 20px;
+    max-width: 100%;
 }
 
 .reviews {
     min-height: 500px;
     background-color: #f3f3f3;
 }
+
 .contactInfo {
     text-align: right;
-
-    }
+}
 
 .navContainer.flex.row {
     margin: 0px;
@@ -143,55 +153,147 @@ font-size: 51px;
 
 .item {
     background-color: #f3f3f3;
-    box-shadow: 0px 0px 8px 2px #eaeaea;
+    box-shadow: 0px 0px 8px 2px #c8c8c8;
     height: 300px;
     width: 100%;
     max-width: 800px;
     margin: auto;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     /* box-shadow: 0px 0px 8px 0px grey; */
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 .item div:nth-child(1) {
     text-align: center;
 }
 
-.item div {
-    width: 50%;
-    padding: 10px;
-
-}
 .inquire {
     width: 90%;
     margin: auto;
     padding: 20px;
 }
+
 .inquireLabel {
     font-size: 24px;
     margin-bottom: 5px;
 }
+
 .inquireHolder {
-    background-color: #002367;
+    background-color: #0e0e0e;
     color: white;
+    padding-bottom: 100px;
 }
+
 .width-full {
     width: 100%;
+    margin: 2px;
 }
+
 .inquireInput {
     height: 40px;
-    font-size:24px;
-    width: 100%;
+    font-size: 24px;
+    width: 99%;
 }
+
 .owl-carousel {
     padding: 20px 0px;
     font-family: 'Raleway', sans-serif;
-
 }
+
+.testimonial {
+    justify-content: space-around;
+    background-color: #f0f0f0;
+}
+
+.testimonial .item, .testimonial .item div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.item {
+    max-width: 340px;
+    min-height: 380px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding: 0px 20px;
+    background-color: #fff;
+}
+
+.item div {
+    width: 100%;
+    padding: 10px;
+}
+
+.testimonial .item img {
+    height: 50px;
+    border-radius: 50px;
+}
+
 .padding {
     width: 50% !important;
+}
+
+.quote {
+    margin-top: 10px;
+    font-style: italic;
+    margin: 24px 0px;
+}
+.quoteP {
+    max-width: 353px;
+}
+
+.aboutMeContent.flex.column.center { 
+    align-items: flex-start;
+}
+.errorMessage {
+    margin: 0px;
+}
+.errorMessage.noError {
+    display: none;
+}
+
+#submit {
+    background-color: white;
+    color: black;
+    border: none;
+    height: 40px;
+    width: 200px;
+    margin-top: 18px;
+    font-size: 25px;
+    font-family: lato;
+    cursor: pointer;
+    border-radius: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                              supported by Chrome and Opera */
+}
+
+#submit:active {
+    background-color: black;
+    color: white;
+}
+
+@media screen and (min-width: 1025px) {
+    .aboutMeContent h1 {
+        white-space: nowrap;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -201,9 +303,13 @@ font-size: 51px;
     .item {
         flex-direction: column;
         width: unset;
+        min-height: 385px;
     }
     .iconHolder {
         padding: 40px 0px;
+    }
+    .iconStatement {
+        padding: 15px;
     }
     .backdropHolder {
         height: 100%;
@@ -222,15 +328,15 @@ font-size: 51px;
         top: 0;
     }
     .aboutMeContent p {
-    padding: 0px 22px;
-    font-size: 1.25em;
-    text-align: justify;
+        padding: 0px 22px;
+        font-size: 1.25em;
+        text-align: justify;
     }
-    .contactInfo{
-    text-align: center;
+    .contactInfo {
+        text-align: center;
         font-size: 1.25em;
     }
-    body > div.navContainer.flex.row > div > h1 {
+    body>div.navContainer.flex.row>div>h1 {
         margin-bottom: 0px;
     }
     .aboutMeContent h1 {
@@ -238,9 +344,14 @@ font-size: 51px;
         text-align: center;
     }
     .inquire {
-        width: 100%;
-        margin: auto;
+        width: 98%;
+        margin: 0px;
         padding: 0px;
     }
-
+    .inquireInput {
+        width: 94%;
+    }
+    .portaitHolder img {
+        margin-top: 95px;
+    }
 }
