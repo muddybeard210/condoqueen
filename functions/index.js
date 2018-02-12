@@ -29,7 +29,7 @@ app.post('/', function(req, res) {
 //app.post('/', (req, res) => res.status(200).send("hey there"));
 // app.put('/:id', (req, res) => res.send(Widgets.update(req.params.id, req.body)));
 // app.delete('/:id', (req, res) => res.send(Widgets.delete(req.params.id)));
-app.get('/', (req, res) => res.status(200).send("hey there"));
+app.get('/', (req, res) => res.status(200).send(`Hey There.  Today is ${Date.now()}`));
 
 // Expose Express API as a single Cloud Function:
 exports.widgets = functions.https.onRequest(app);
