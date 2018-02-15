@@ -21,10 +21,11 @@ app.use(cors({ origin: true }));
 // build multiple CRUD interfaces:
 //app.get('/:id', (req, res) => res.send(Widgets.getById(req.params.id)));
 app.post('/', function(req, res) {
-    mailgun.messages().send(data, function (error, body) {
-        console.log(body);
-      });
-    res.status(200).send("hey there");
+    
+    // mailgun.messages().send(data, function (error, body) {
+    //     console.log(body);
+    //   });
+    res.status(200).send(req.body);
 });
 //app.post('/', (req, res) => res.status(200).send("hey there"));
 // app.put('/:id', (req, res) => res.send(Widgets.update(req.params.id, req.body)));
